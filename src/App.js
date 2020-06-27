@@ -18,7 +18,6 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
 
 function TodoForm({ addTodo }) {
 	const [value, setValue] = useState("");
-
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if (!value) return;
@@ -40,6 +39,7 @@ function TodoForm({ addTodo }) {
 }
 
 function App() {
+	console.log("App called/refreshed");
 	const [todos, setTodos] = useState([
 		{
 			text: "Learn React",
